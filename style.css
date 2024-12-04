@@ -1,172 +1,36 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Apply this only for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        background-color: #FFFFFF; /* Optional: background color */
+    }
+
+    .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensure the container takes full viewport height */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    button {
+        position: absolute; /* This ensures the button is placed on top of the image */
+        padding: 10px 20px;
+        background-color: #f08d20; /* Button color */
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1; /* Ensures the button is above the image */
+    }
+
+    button:hover {
+        background-color: #d07819; /* Hover effect */
+    }
 }
-
-body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', Arial, sans-serif;
-}
-
-.app-container {
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-}
-
-/* Header */
-.app-header {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-}
-
-.app-header h1 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000000;
-}
-
-.icon-btn {
-    background: none;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.icon-btn img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-
-/* Main Content */
-.app-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.logo-container {
-    margin-bottom: 2rem;
-}
-
-.logo {
-    width: 140px;
-    height: auto;
-    
-}
-
-/* Action Buttons */
-.action-buttons {
-    display: flex;
-    margin-top: 43vh;
-    gap: 1rem;
-}
-
-.main-btn {
-    background: linear-gradient(to bottom, #1CADE9, #109DD9); /* Top to bottom gradient */
-    color: #ffffff;
-    font-size: 1.2rem;
-    width: 18vh;
-    height: 6vh;
-    border: none;
-    border-radius: 1.2vh;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s; /* Updated to transition the gradient smoothly */
-}
-
-.main-btn:hover {
-    background-color: #0056b3;
-}
-
-
-.main-btnScan {
-    background: linear-gradient(to bottom, #E8F7FD, #E8F7FD); /* Top to bottom gradient */
-    color: #4D8EC5;
-    font-size: 1.2rem;
-    width: 18vh;
-    height: 6vh;
-    border: none;
-    border-radius: 1.2vh;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s; /* Updated to transition the gradient smoothly */
-}
-
-.main-btnScan:hover {
-    background-color: #0056b3;
-}
-
-.main-btn.secondary {
-    background-color: #e3f2fd;
-    color: #000000;
-}
-
-.btn-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
-}
-
-/* Footer */
-.app-footer {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    border-top: 1px solid #ddd;
-}
-
-.nav-btn {
-    background: none;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
-    color: #000000;
-    cursor: pointer;
-}
-
-.nav-btn img {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 0.3rem;
-    object-fit: contain;
-}
-
-
-.nav-btn2 {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 0.3rem;
-    object-fit: contain;
-}
-

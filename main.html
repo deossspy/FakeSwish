@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swish</title>
-    <link rel="shortcut icon" href="webIco.png" type="image/x-icon">
+    <title>App Layout</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <div class="app-container">
@@ -16,9 +14,9 @@
             <button class="icon-btn">
                 <img src="wve.png" alt="Wave Icon">
             </button>
-            <h1>SwedBank</h1>
+            <h1>Handelsbanken</h1>
             <button class="icon-btn">
-                <img src="settings-icon-vector-21894454.jpg" alt="Settings Icon">
+                <img src="settings-icon.png" alt="Settings Icon">
             </button>
         </header>
 
@@ -29,8 +27,9 @@
             </div>
             <div class="action-buttons">
                 <button class="main-btn">Swish</button>
-                <button class="main-btnScan">
-                    <img src="qr-code.png" alt="QR Icon" class="btn-icon" style="width: 4vh; height: 4vh; object-fit: contain;" > Scan
+                <button class="main-btn secondary">
+                    <img src="qr-code.png" alt="QR Icon" class="btn-icon" style="width: 4vh; height: 4vh;">
+                    Scan
                 </button>
             </div>
         </main>
@@ -49,19 +48,11 @@
                 <img src="history.png" alt="History Icon">
                 <span>History</span>
             </button>
+            <button class="nav-btn">
+                <img src="profile.png" alt="Profile Icon">
+                <span>Profile</span>
+            </button>
         </footer>
     </div>
 </body>
 </html>
-
-
-<script>
-    function setFullHeight() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-window.addEventListener('resize', setFullHeight);
-setFullHeight(); // Set on page load
-
-</script>
