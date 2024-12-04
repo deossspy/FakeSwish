@@ -71,32 +71,54 @@ body {
 .logo {
     width: 140px;
     height: auto;
-    object-fit: contain;
+    
 }
 
 /* Action Buttons */
 .action-buttons {
     display: flex;
+    margin-top: 43vh;
     gap: 1rem;
 }
 
 .main-btn {
-    background-color: #1CADE9;
+    background: linear-gradient(to bottom, #1CADE9, #109DD9); /* Top to bottom gradient */
     color: #ffffff;
     font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
+    width: 18vh;
+    height: 6vh;
     border: none;
-    border-radius: 20px;
+    border-radius: 1.2vh;
     cursor: pointer;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    transition: background 0.3s; /* Updated to transition the gradient smoothly */
 }
 
 .main-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.main-btnScan {
+    background: linear-gradient(to bottom, #E8F7FD, #E8F7FD); /* Top to bottom gradient */
+    color: #4D8EC5;
+    font-size: 1.2rem;
+    width: 18vh;
+    height: 6vh;
+    border: none;
+    border-radius: 1.2vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s; /* Updated to transition the gradient smoothly */
+}
+
+.main-btnScan:hover {
     background-color: #0056b3;
 }
 
@@ -139,3 +161,12 @@ body {
     margin-bottom: 0.3rem;
     object-fit: contain;
 }
+
+
+.nav-btn2 {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.3rem;
+    object-fit: contain;
+}
+

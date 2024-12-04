@@ -29,7 +29,7 @@
             </div>
             <div class="action-buttons">
                 <button class="main-btn">Swish</button>
-                <button class="main-btn secondary">
+                <button class="main-btnScan">
                     <img src="qr-code.png" alt="QR Icon" class="btn-icon" style="width: 4vh; height: 4vh; object-fit: contain;" > Scan
                 </button>
             </div>
@@ -42,14 +42,26 @@
                 <span>Home</span>
             </button>
             <button class="nav-btn">
-                <img src="requests-icon.png" alt="Requests Icon">
+                <img src="requests.png" alt="Requests Icon">
                 <span>Requests</span>
             </button>
             <button class="nav-btn">
-                <img src="history-icon.png" alt="History Icon">
+                <img src="history.png" alt="History Icon">
                 <span>History</span>
             </button>
         </footer>
     </div>
 </body>
 </html>
+
+
+<script>
+    function setFullHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+window.addEventListener('resize', setFullHeight);
+setFullHeight(); // Set on page load
+
+</script>
